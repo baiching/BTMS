@@ -67,6 +67,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteRepository.cs" />
     <Compile Include="RoutPointRepository.cs" />
+    <Compile Include="TicketRepository.cs" />
+    <Compile Include="TrafficRepository.cs" />
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>

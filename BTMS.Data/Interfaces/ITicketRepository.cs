@@ -6,8 +6,6 @@ namespace BTMS.Data.Interfaces
 {
     public interface ITicketRepository : IUserRepository<Ticket>
     {
-        IEnumerable<Ticket> Tickets { get; }
-        
-        Ticket RemoveTicket(Ticket ticket);
+        bool RemoveTicket(Ticket ticket);
     }
 }
