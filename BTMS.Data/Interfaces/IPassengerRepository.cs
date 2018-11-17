@@ -5,6 +5,5 @@ namespace BTMS.Data.Interfaces
 {
     public interface IPassengerRepository : IUserRepository<Passenger>
     {
-        IEnumerable<Passenger> Passengers { get; }
     }
 }

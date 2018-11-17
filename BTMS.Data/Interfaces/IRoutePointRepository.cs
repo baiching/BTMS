@@ -5,8 +5,6 @@ namespace BTMS.Data.Interfaces
 {
     public interface IRoutePointRepository : IUserRepository<RoutePoint>
     {
-        IEnumerable<RoutePoint> RoutePoints { get; }
-        
-        RoutePoint RemoveRoutePoint(RoutePoint routePoint);
+        bool RemoveRoutePoint(RoutePoint routePoint);
     }
 }
