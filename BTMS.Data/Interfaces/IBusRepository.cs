@@ -11,8 +11,8 @@ namespace BTMS.Data.Interfaces
     {
         IEnumerable<Bus> Buses { get; }
 
-        void RegisterBus(Bus bus);
-        Bus Remove(Bus bus);
-        Bus Update(Bus bus);
+        bool RegisterBus(Bus bus);
+        bool Remove(Bus bus);
+        bool Update(Bus bus);
     }
 }

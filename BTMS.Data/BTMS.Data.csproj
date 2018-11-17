@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminRepository.cs" />
+    <Compile Include="BusRepository.cs" />
     <Compile Include="Interfaces\IAdminRepository.cs" />
     <Compile Include="Interfaces\IBusRepository.cs" />
     <Compile Include="Interfaces\IDriverRepository.cs" />
