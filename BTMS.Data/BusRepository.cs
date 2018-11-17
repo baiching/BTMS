@@ -20,26 +20,29 @@ namespace BTMS.Data
 
         public bool RegisterBus(Bus bus)
         {
+            
             context.Buses.Add(bus);
             return context.SaveChanges() > 0;
         }
 
         public bool Remove(Bus bus)
         {
-            if (bus == null)
+            try
             {
-                throw new ArgumentNullException(nameof(bus), "Bus cannot be null");
-            }
+                if (bus == null)
+                {
+                    throw new ArgumentNullException(nameof(bus), "Bus cannot be null");
+                }
 
-            var removeBus = context.Buses.Find(bus.Id);
-
-            if(removeBus != null)
-            {
+                var removeBus = context.Buses.Find(bus.Id);
+                
                 context.Buses.Remove(removeBus);
                 return context.SaveChanges() > 0;
             }
-
-            return false;
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public bool Update(Bus bus)

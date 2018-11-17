@@ -21,20 +21,22 @@ namespace BTMS.Data
 
         public bool Remove(Driver driver)
         {
-            if (driver == null)
+            try
             {
-                throw new ArgumentNullException(nameof(driver), "Bus cannot be null");
-            }
+                if (driver == null)
+                {
+                    throw new ArgumentNullException(nameof(driver), "Bus cannot be null");
+                }
 
-            var removeDriver = context.Drivers.Find(driver.Id);
+                var removeDriver = context.Drivers.Find(driver.Id);
 
-            if (removeDriver != null)
-            {
                 context.Drivers.Remove(removeDriver);
                 return context.SaveChanges() > 0;
             }
-
-            return false;
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public bool Update(Driver driver)
