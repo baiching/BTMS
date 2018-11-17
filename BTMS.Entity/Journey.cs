@@ -38,5 +38,7 @@ namespace BTMS.Entity
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Traffic> Traffic { get; set; }
+
+        public virtual Route Route { get; set; }
     }
 }

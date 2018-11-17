@@ -34,6 +34,40 @@ namespace BTMS.Entity
                 .WithRequired(r => r.Driver)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Journey>()
+                .HasMany(r => r.Ticket)
+                .WithRequired(r => r.Journey)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Journey>()
+                .HasMany(r => r.Traffic)
+                .WithRequired(r => r.Journey)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Passenger>()
+                .HasMany(r => r.Ticket)
+                .WithRequired(r => r.Passenger)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Route>()
+                .HasMany(r => r.Journey)
+                .WithRequired(r => r.Route)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<RoutePoint>()
+                .HasMany(r => r.Route)
+                .WithRequired(r => r.RoutePoint)
+                .HasForeignKey(r => r.ArrivalPointId)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Ticket>()
+                .Property(r => r.Price)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<Ticket>()
+                .HasMany(r => r.Traffic)
+                .WithRequired(r => r.Ticket)
+                .WillCascadeOnDelete(false);
         }
     }
 }
