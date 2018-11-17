@@ -6,8 +6,6 @@ namespace BTMS.Data.Interfaces
 {
     public interface IRouteRepository : IUserRepository<Route>
     {
-        IEnumerable<Route> Routes { get; }
-        
-        Route RemoveRoute(Route route);
+        bool RemoveRoute(Route route);
     }
 }
