@@ -7,6 +7,6 @@ namespace BTMS.Data.Interfaces
     public interface IJourneyRepository : IUserRepository<Journey>
     {
         IEnumerable<Journey> Journeys { get; }
-        Journey RemoveJourney(Journey journey);
+        bool RemoveJourney(Journey journey);
     }
 }
