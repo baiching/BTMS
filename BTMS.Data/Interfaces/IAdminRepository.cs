@@ -9,7 +9,7 @@ namespace BTMS.Data.Interfaces
 {
     public interface IAdminRepository
     {
-        void RegisterAdmin(Admin admin);
+        bool RegisterAdmin(Admin admin);
         bool Login(string username, string password);
     }
 }

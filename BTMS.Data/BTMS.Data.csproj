@@ -48,9 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminRepository.cs" />
     <Compile Include="Interfaces\IAdminRepository.cs" />
     <Compile Include="Interfaces\IBusRepository.cs" />
     <Compile Include="Interfaces\IDriverRepository.cs" />
+    <Compile Include="Interfaces\IJourneyRepository.cs" />
+    <Compile Include="Interfaces\IPassengerRepository.cs" />
+    <Compile Include="Interfaces\IRoutePointRepository.cs" />
+    <Compile Include="Interfaces\IRouteRepository.cs" />
+    <Compile Include="Interfaces\ITicketRepository.cs" />
+    <Compile Include="Interfaces\ITrafficRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
