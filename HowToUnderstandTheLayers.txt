@@ -1,0 +1,6 @@
+* Start looking From "BTMS.Entity" 
+* Then "BTMS.Data"
+* Then "BTMS.Core"
+* Then The controllers of "BTMS" layer
+
+With that style the whole system will make sense.

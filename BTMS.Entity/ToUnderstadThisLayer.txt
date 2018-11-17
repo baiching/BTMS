@@ -1,0 +1,4 @@
+﻿Just Checkout the BtmsContext class, you will get the whole picture of this layer.
+
+To understand the relationships check "OnModelCreating()" function which is overridden version of original class and
+gives much deeper understanding of the system.
