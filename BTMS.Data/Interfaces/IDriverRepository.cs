@@ -11,8 +11,8 @@ namespace BTMS.Data.Interfaces
     {
         IEnumerable<Driver> Drivers { get; }
 
-        void RegisterDriver(Driver driver);
-        Driver Remove(Driver driver);
-        Driver Update(Driver driver);
+        bool RegisterDriver(Driver driver);
+        bool Remove(Driver driver);
+        bool Update(Driver driver);
     }
 }
