@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAdminRepository.cs" />
+    <Compile Include="Interfaces\IBusRepository.cs" />
+    <Compile Include="Interfaces\IDriverRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
