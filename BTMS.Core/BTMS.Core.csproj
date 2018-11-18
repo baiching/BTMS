@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminService.cs" />
+    <Compile Include="BusService.cs" />
+    <Compile Include="DomainService.cs" />
+    <Compile Include="DriverService.cs" />
+    <Compile Include="interfaces\IAdminService.cs" />
+    <Compile Include="interfaces\IBusService.cs" />
+    <Compile Include="interfaces\IDomainService.cs" />
+    <Compile Include="interfaces\IDriverService.cs" />
+    <Compile Include="interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BTMS.Data\BTMS.Data.csproj">
+      <Project>{F45579C8-A26E-4472-A1A6-D65D9F5F5BD9}</Project>
+      <Name>BTMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTMS.Entity\BTMS.Entity.csproj">
+      <Project>{3BF866FD-8CF6-46BF-A4C7-D37DC9F98E83}</Project>
+      <Name>BTMS.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
